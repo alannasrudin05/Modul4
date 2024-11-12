@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VolumeActivity">
+
+    <!--    <com.google.android.material.appbar.AppBarLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@android:color/black"-->
+    <!--        app:elevation="0dp">-->
+
+    <!--        <androidx.appcompat.widget.Toolbar-->
+    <!--            android:id="@+id/toolbar"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="?attr/actionBarSize"-->
+    <!--            app:navigationIcon="@drawable/ic_back"-->
+    <!--            app:title="Hitung Volume"-->
+    <!--            app:titleTextColor="@android:color/white">-->
+    <!--        </androidx.appcompat.widget.Toolbar>-->
+
+    <!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="400dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="40dp"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Perhitung Volume"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/nilai_panjang"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="nilai panjang"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:id="@+id/panjang_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    android:visibility="gone"/>
+                <EditText
+                    android:id="@+id/nilai_lebar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="nilai lebar"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:id="@+id/lebar_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    android:visibility="gone"/>
+                <EditText
+                    android:id="@+id/nilai_tinggi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="nilai tinggi"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:id="@+id/tinggi_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <Button
+                        android:id="@+id/btn_hitung"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hitung"
+                        android:backgroundTint="@color/primary"
+
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/tv_hasil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+
+                    />
+
+            </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
